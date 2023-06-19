@@ -2,6 +2,13 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
+    <style>
+        body{
+            background-image: url('background_image1.jpg');
+            background-size: 100%;
+        }
+    </style>
+
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
